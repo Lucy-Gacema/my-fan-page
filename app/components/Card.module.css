@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 0.75rem;
+  height: 100%;         
+  min-height: 0;        
+  justify-content: space-between;
+}
+
+.cardImage {
+  width: 100%;
+  flex: 1;              
+  min-height: 0;        
+  object-fit: cover;    
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.stars { color: #f5a623; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card button {
+  background: transparent ;
+  
+  opacity: 80%;
+  color: white;
+  border: 3px solid  #00d2ff;
+  padding: 4px 10px ;
+  border-radius: 30px ;
+  font-size: 0.75rem ;
+  display: inline-flex ;
+  align-items: center ;
+  width: auto ;
+  margin-top: 10px ;
+  box-shadow: none ;
+}
+
+
+.card button:hover {
+  border-color: #00d2ff ;
+  color: #ffffff ;
+  background-color:#00d2ff  ;
+}
+
